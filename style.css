@@ -3,10 +3,54 @@ body {
     margin: 0
 }
 
+/* #scenery-container {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+} */
+
+#ground-container {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+
+#ground {
+  top: 0px;
+  left: 0px;
+  width: auto;
+  height: 727px;
+  background-image: url(img/grass.png);
+}
+
+/* .treeOne {
+  top: 0px;
+  left: 0px;
+  width: 500px;
+  height: 378px;
+  background-image: url(img/treeone.png) no-repeat;
+}
+
+.treeTwo {
+  top: 10px;
+  left: 20px;
+  width: 500px;
+  height: 313px;
+  background-image: url(img/treetwo.png) no-repeat;
+} */
+
+#sprite-container {
+  position: absolute;
+  left: 30%;
+  bottom: 15%;
+}
+
 #sprite {
   top: 0px;
   left: 0px;
-  width: 516px;
-  height: 612px;
-  background-image: url(img/character-sprite.png);
+  width: 205px;
+  height: 240px;
+  background: url(img/character-sprite.png) no-repeat;
 }
