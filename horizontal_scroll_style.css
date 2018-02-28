@@ -28,7 +28,7 @@ h1 {
 }
 
 .sky-img {
-  /*background-color: #5a2c74;*/
+/*  background-color: #5a2c74;*/
   content: url("sky.jpg");
   background-size: cover;
   position: absolute;
@@ -56,17 +56,17 @@ h1 {
 }
 
 .tree-img{
-  content: url("tree.jpg");
+  content: url("tree.png");
   width: 30%;
   z-index: 1;
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   margin-left: 40%;
 }
 
 #water-drop{
-  content:url("waterdrop.jpg");
-  bottom: 0;
+  content: url(img/character-sprite.png);
+  bottom: 50px;
   position: absolute;
   z-index: 2;
 }
