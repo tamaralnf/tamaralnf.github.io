@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   text-transform: uppercase;
+    background-color: #3570e8;
 }
 #pinContainer {
   width: 100%;
@@ -10,10 +11,12 @@ body {
   -webkit-perspective: 1000;
   perspective: 1000;
 }
+
 #slideContainer {
   width: 400%;
   height: 100vh;
 }
+
 .panel {
   height: 100vh;
   width: 25%;
@@ -57,6 +60,7 @@ h1 {
 }
 
 .sky-img {
+<<<<<<< HEAD:horizontal_scroll_style1.css
   /*background-color: #5a2c74;*/
   content: url("sky.jpg");
   background-size: cover;
@@ -65,6 +69,21 @@ h1 {
   height: 100%;
   z-index: 1;
 }
+=======
+
+}
+
+/*
+.two {
+  background-color: #ab6eb6;
+  background: url("sky.jpg");
+  background-size: cover;
+  color: #5a2c74;
+  width: 150%
+}
+*/
+
+>>>>>>> 28465fbeea1c04eacaec33b4f16f11f50a34b1f1:horizontal_scroll_style.css
 
 .grass-img{
   content: url("grass.png");
@@ -76,6 +95,7 @@ h1 {
   z-index: 3;
 }
 
+<<<<<<< HEAD:horizontal_scroll_style1.css
 #water-drop{
   content:url("waterdrop.png");
   bottom: 0;
@@ -85,6 +105,21 @@ h1 {
 
 .index2{
   position: fixed;
+=======
+.tree-img{
+  content: url("tree.png");
+  width: 30%;
+  z-index: 1;
+  position: absolute;
+  bottom: 30px;
+  margin-left: 40%;
+}
+
+#water-drop{
+  content: url(img/character-sprite.png);
+  bottom: 50px;
+  position: absolute;
+>>>>>>> 28465fbeea1c04eacaec33b4f16f11f50a34b1f1:horizontal_scroll_style.css
   z-index: 2;
   bottom: 10;
 }
