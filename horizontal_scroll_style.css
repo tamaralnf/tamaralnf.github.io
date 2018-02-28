@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   text-transform: uppercase;
+    background-color: #3570e8;
 }
 #pinContainer {
   width: 100%;
@@ -10,11 +11,13 @@ body {
   -webkit-perspective: 1000;
   perspective: 1000;
 }
+
 #slideContainer {
   width: 400%;
   height: 100%;
   
 }
+
 .panel {
   height: 100vh;
   width: 25%;
@@ -28,21 +31,18 @@ h1 {
 }
 
 .sky-img {
-/*  background-color: #5a2c74;*/
-  content: url("sky.jpg");
-  background-size: cover;
-  position: absolute;
-  /*width: 130%;*/
-  height: 100%;
-  z-index: 1;
+
 }
+
+/*
 .two {
-  /*background-color: #ab6eb6;*/
+  background-color: #ab6eb6;
   background: url("sky.jpg");
   background-size: cover;
-  color: white;
+  color: #5a2c74;
   width: 150%
 }
+*/
 
 
 .grass-img{
