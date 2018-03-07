@@ -8,7 +8,7 @@ var controller = new ScrollMagic.Controller();
 
 		// define movement of panels
 		var wipeAnimation = new TimelineMax()
-			.to("#slideContainer", 1,   {x: "-75%"}, 0)
+			.to("#slideContainer", 1,   {x: "-85%"}, 0)
 			.to(".tree-img", 1, {x:"-100%"}, 0)
 			//.to('#water-drop', 1, {x:"135%"}, 0)
 			// .set("#water-drop", 1, {z-index: 2},0)
@@ -41,7 +41,7 @@ var controller = new ScrollMagic.Controller();
 			.to("#water-drop", 1, {y:"0%", ease:Power0.easeNone})
 		new ScrollMagic.Scene({
 			offset: 500,
-			duration: "30%"
+			duration: "20%"
 			// triggerHook: "40"
 		})
 		.setTween(waterTL)
@@ -83,15 +83,15 @@ var controller = new ScrollMagic.Controller();
 
 	  	// make the intro un transparent
 	  	var sceneTwo = new TimelineMax()
-	  		.to(".two", 1, {y:"-10%"},0)
+	  		.to(".two", 2, {y:"-10%"},0)
 	  		.to("#intro2", 10, {opacity:"1", y:"20%"},0)
-	  		.to(".two", 1, {y:"0%"})
+	  		.to(".two", 2, {y:"0%"})
 
 	  		// .pin("#intro2")
 
 
 	  	new ScrollMagic.Scene({
-	  		offset: "250%",
+	  		offset: "200%",
 	  		duration: "20%"
 	  	})
 	  	.setTween(sceneTwo)
@@ -101,11 +101,12 @@ var controller = new ScrollMagic.Controller();
 	  	// make the intro un transparent
 	  	var sceneThree = new TimelineMax()
 	  		// .to(".three", 1, {y:"-20%"})
-	  		.to("#intro3", 2, {opacity:"1"})
-	  		.to("#water-drop", 2, {y:"-100%"})
+	  		.to("#intro3", 1, {opacity:"1"})
+	  		.to("#water-drop", 2, {y:"-100%"}, 7)
+	  		.to("#water-drop", 1, {y:"0%"}, 15)
 
 	  	new ScrollMagic.Scene({
-	  		offset: "900%",
+	  		offset: "700%",
 	  		duration: "40%"
 	  	})
 	  	.setTween(sceneThree)
@@ -114,35 +115,45 @@ var controller = new ScrollMagic.Controller();
 
 
 	  	var sceneFour = new TimelineMax()
-	  		.to("#intro4", 2, {opacity: "1"}, 0)
-	  		.to("#water-drop", 2, {y:"-150%"},0)
+	  		.to("#intro4", 2, {opacity: ".7"}, 0)
+	  		.to("#water-drop", 10,
+        			{css:{ rotation: 360*1}, 
+        			ease:Quad.easeInOut
+  			}, 10)
+	  		// .to("#water-drop", 2, {y:"-30%"},2)
 
 
 	  	new ScrollMagic.Scene({
-	  		offset: "1400%",
-	  		duration: "10%"
+	  		offset: "1000%",
+	  		duration: "30%"
 	  	})
 	  	.setTween(sceneFour)
 	  	.addIndicators({name: "scene 4"})
 	  	.addTo(controller);
 
 	  	var sceneFive = new TimelineMax()
-	  		.to("#water-drop", 2, {y:"-50%"},0)
+	  		.to("#water-drop", 2, {y:"-50%"},16)
 	  		.to("#intro5", 2, {opacity:"1"}, 0)
+	  		.to("#water-drop", 10,
+        			{css:{ rotation: 360*3}, 
+        			ease:Quad.easeInOut
+  			})
+  			.to("#water-drop", 2, {y:"0%"});
+	  		//add rotation to the water drop
 	  	new ScrollMagic.Scene({
-	  		offset: "1700%",
-	  		duration: "10%"
+	  		offset: "1200%",
+	  		duration: "70%"
 	  	})
 	  	.setTween(sceneFive)
 	  	.addIndicators({name: "scene 5"})
 	  	.addTo(controller)
 
 	  	var sceneSix = new TimelineMax()
-	  		// .to("#water-drop", 2, {y:"-50%"},0)
 	  		.to("#intro6", 2, {opacity:"1"}, 0)
+	  		.to("#water-drop", 1, {y:"-80%"}, 20)
 	  	new ScrollMagic.Scene({
-	  		offset: "2200%",
-	  		duration: "10%"
+	  		offset: "1700%",
+	  		duration: "60%"
 	  	})
 	  	.setTween(sceneSix)
 	  	.addIndicators({name: "scene 6"})
@@ -151,11 +162,45 @@ var controller = new ScrollMagic.Controller();
 
 	  	var sceneSeven = new TimelineMax()
 	  		.to("#intro7", 2, {opacity:"1"}, 0)
+	  		.to("#water-drop", 1, {y:"-50%", ease:Power0.easeNone}, 5)
+			.to("#water-drop", 1, {y:"-30%", ease:Power0.easeNone})
+			.to("#water-drop", 1, {y:"-50%", ease:Power0.easeNone})
+			.to("#water-drop", 1, {y:"-80%", ease:Power0.easeNone});
 
 	  	new ScrollMagic.Scene({
-	  		offset: "2900%",
-	  		duration: "10%"
+	  		offset: "2200%",
+	  		duration: "50%"
 	  	})
 	  	.setTween(sceneSeven)
 	  	.addIndicators({name: "scene 7"})
 	  	.addTo(controller)
+
+
+	  	var sceneEigth = new TimelineMax()
+	  		.to("#intro8", 2, {opacity:"1"}, 0)
+	  		.to("#water-drop", 2, {y:"-10%"}, 2)
+	  		.to("#water-drop", 2, {x:"550%"})
+	  		.to("#water-drop", 2, {y:"-200%"})
+
+	  	new ScrollMagic.Scene({
+	  		offset: "2900%",
+	  		duration: "40%"
+	  	})
+	  	.setTween(sceneEigth)
+	  	.addIndicators({name: "scene 8"})
+	  	.addTo(controller)
+
+
+	  	// var sceneNinth = new TimelineMax()
+	  	// 	.to("#intro9", 2, {opacity:"1"}, 0)
+	  		
+	  	// 	.to("#water-drop", 1, {x:"550%"})
+	  	// 	.to("#water-drop", 1, {y:"-200%"})
+
+	  	// new ScrollMagic.Scene({
+	  	// 	offset: "2860%",
+	  	// 	duration: "40%"
+	  	// })
+	  	// .setTween(sceneNinth)
+	  	// .addIndicators({name: "scene 9"})
+	  	// .addTo(controller)
