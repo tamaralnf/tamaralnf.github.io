@@ -38,8 +38,7 @@ var controller = new ScrollMagic.Controller();
 			.to("#water-drop", 1, {y:"-50%", ease:Power0.easeNone})
 			.to("#water-drop", 1, {y:"-30%", ease:Power0.easeNone})
 			.to("#water-drop", 1, {y:"-50%", ease:Power0.easeNone})
-			.to("#water-drop", 1, {y:"0%", ease:Power0.easeNone});
-
+			.to("#water-drop", 1, {y:"0%", ease:Power0.easeNone})
 		new ScrollMagic.Scene({
 			offset: 500,
 			duration: "30%"
@@ -101,12 +100,12 @@ var controller = new ScrollMagic.Controller();
 
 	  	// make the intro un transparent
 	  	var sceneThree = new TimelineMax()
-	  		.to(".three", 1, {y:"-20%"})
+	  		// .to(".three", 1, {y:"-20%"})
 	  		.to("#intro3", 2, {opacity:"1"})
 	  		.to("#water-drop", 2, {y:"-100%"})
 
 	  	new ScrollMagic.Scene({
-	  		offset: "750%",
+	  		offset: "900%",
 	  		duration: "40%"
 	  	})
 	  	.setTween(sceneThree)
