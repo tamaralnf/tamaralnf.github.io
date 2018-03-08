@@ -83,9 +83,9 @@ var controller = new ScrollMagic.Controller();
 
 	  	// make the intro un transparent
 	  	var sceneTwo = new TimelineMax()
-	  		.to(".two", 2, {y:"-10%"},0)
+	  		.to(".two", 2, {y:"3%"},0)
 	  		.to("#intro2", 10, {opacity:"1", y:"20%"},0)
-	  		.to(".two", 2, {y:"0%"})
+	  		.to(".two", 2, {y:"3%"})
 
 	  		// .pin("#intro2")
 

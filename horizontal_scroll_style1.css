@@ -34,7 +34,9 @@ h1 {
 
 }
 .two {
-  /*content: url("sky.jpg");*/
+  background: url("img/ground.png") repeat-x;
+  background-position: bottom;
+  background-size: 10%;
   color: white;
   width: 22%;
   height: 100%;
@@ -295,6 +297,23 @@ h1 {
   right: 580px;
   position: absolute;
   z-index: 0;
+}
+
+#waterflow{
+  content: url("img/wave.png");
+  bottom: -2%;
+  right: 0;
+  position: absolute;
+  width: 30%;
+  height: 30%;
+}
+#waterflow1{
+  content: url("img/wave.png");
+  bottom: -15%;
+  right: 0%;
+  position: absolute;
+  width: 30%;
+  height: 40%;
 }
 /*#settle{
   content: url("img/settling.png");
