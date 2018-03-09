@@ -191,16 +191,3 @@ var controller = new ScrollMagic.Controller();
 	  	.addTo(controller)
 
 
-	  	// var sceneNinth = new TimelineMax()
-	  	// 	.to("#intro9", 2, {opacity:"1"}, 0)
-	  		
-	  	// 	.to("#water-drop", 1, {x:"550%"})
-	  	// 	.to("#water-drop", 1, {y:"-200%"})
-
-	  	// new ScrollMagic.Scene({
-	  	// 	offset: "2860%",
-	  	// 	duration: "40%"
-	  	// })
-	  	// .setTween(sceneNinth)
-	  	// .addIndicators({name: "scene 9"})
-	  	// .addTo(controller)
