@@ -21,7 +21,7 @@ var controller = new ScrollMagic.Controller();
 			})
 		  .setPin("#pinContainer")
 			.setTween(wipeAnimation)
-			.addIndicators()
+			// .addIndicators()
 			.addTo(controller);
 
 		new ScrollMagic.Scene({
@@ -30,7 +30,7 @@ var controller = new ScrollMagic.Controller();
 				duration: "40%"
 			})
 			.setTween(TweenMax.to(".grass-img", 1,   {x: "-100%"}, 0))
-			.addIndicators()
+			// .addIndicators()
 			.addTo(controller);
 		var waterTL = new TimelineMax()
 			.to("#water-drop",  1, {y:"-50%", ease:Power0.easeNone})
@@ -45,9 +45,9 @@ var controller = new ScrollMagic.Controller();
 			// triggerHook: "40"
 		})
 		.setTween(waterTL)
-		.addIndicators({
-			name:"water_move"
-		})
+		// .addIndicators({
+		// 	name:"water_move"
+		// })
 		.addTo(controller);
 
 
@@ -95,7 +95,7 @@ var controller = new ScrollMagic.Controller();
 	  		duration: "20%"
 	  	})
 	  	.setTween(sceneTwo)
-	  	.addIndicators({name: "scene 2"})
+	  	// .addIndicators({name: "scene 2"})
 	  	.addTo(controller);
 
 	  	// make the intro un transparent
@@ -110,7 +110,7 @@ var controller = new ScrollMagic.Controller();
 	  		duration: "40%"
 	  	})
 	  	.setTween(sceneThree)
-	  	.addIndicators({name: "scene 3"})
+	  	// .addIndicators({name: "scene 3"})
 	  	.addTo(controller);
 
 
@@ -128,7 +128,7 @@ var controller = new ScrollMagic.Controller();
 	  		duration: "30%"
 	  	})
 	  	.setTween(sceneFour)
-	  	.addIndicators({name: "scene 4"})
+	  	// .addIndicators({name: "scene 4"})
 	  	.addTo(controller);
 
 	  	var sceneFive = new TimelineMax()
@@ -145,7 +145,7 @@ var controller = new ScrollMagic.Controller();
 	  		duration: "70%"
 	  	})
 	  	.setTween(sceneFive)
-	  	.addIndicators({name: "scene 5"})
+	  	// .addIndicators({name: "scene 5"})
 	  	.addTo(controller)
 
 	  	var sceneSix = new TimelineMax()
@@ -156,7 +156,7 @@ var controller = new ScrollMagic.Controller();
 	  		duration: "60%"
 	  	})
 	  	.setTween(sceneSix)
-	  	.addIndicators({name: "scene 6"})
+	  	// .addIndicators({name: "scene 6"})
 	  	.addTo(controller)
 
 
@@ -172,7 +172,7 @@ var controller = new ScrollMagic.Controller();
 	  		duration: "50%"
 	  	})
 	  	.setTween(sceneSeven)
-	  	.addIndicators({name: "scene 7"})
+	  	// .addIndicators({name: "scene 7"})
 	  	.addTo(controller)
 
 
@@ -187,7 +187,7 @@ var controller = new ScrollMagic.Controller();
 	  		duration: "40%"
 	  	})
 	  	.setTween(sceneEigth)
-	  	.addIndicators({name: "scene 8"})
+	  	// .addIndicators({name: "scene 8"})
 	  	.addTo(controller)
 
 
